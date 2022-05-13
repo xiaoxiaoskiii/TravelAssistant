@@ -1,0 +1,104 @@
+/* pages/team/team.wxss */
+.header{
+    height: 200rpx;
+    padding: 40rpx 30rpx;
+    display:flex;
+    flex-direction: column;
+    background-color: #0086f6;
+    color: white;
+}
+.title{
+    font-size: 40rpx;
+    font-weight: 700;
+    padding: 20rpx;
+}
+.body{
+    padding: 40rpx;
+}
+.crt{
+    height:80rpx;
+    margin-top: top 30rpx;
+    margin-bottom: 20rpx;
+    box-shadow: #77778a 0 0 5rpx;
+    border-radius:10rpx;
+    border:solid 1rpx  #0086f6;
+}
+.crtdesc{
+    height:200rpx;
+    margin-top: top 30rpx;
+    margin-bottom: 20rpx;
+    box-shadow: #77778a 0 0 5rpx;
+    border-radius:10rpx;
+    border:solid 1rpx  #0086f6;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+}
+.crtnumm{
+    height:80rpx;
+    width: 40rps;
+    margin-top:  30rpx;
+    margin-bottom: 20rpx;
+    margin-left: 0rpx;
+    margin-right: 15rpx;
+    box-shadow: #77778a 0 0 5rpx;
+    border-radius:10rpx;
+    border:solid 1rpx  #0086f6;
+}
+.crtnumf{
+    height:80rpx;
+    width: 40rps;
+    margin-top:  30rpx;
+    margin-bottom: 20rpx;
+    margin-right: 0rpx;
+    margin-left: 40rpx;
+    box-shadow: #77778a 0 0 5rpx;
+    border-radius:10rpx;
+    border:solid 1rpx  #0086f6;
+}
+.request-text{
+    color:white;
+}
+
+.doc{
+    color:white;
+}
+
+
+.bgimg1{
+    position: absolute;
+    width:100%;
+    height: 32%;
+    margin-bottom: 20rpx;
+    z-index:-1;
+}
+.bgimg2{
+    position: absolute;
+    width:100%;
+    height: 32%;
+    margin-bottom: 20rpx;
+    z-index:-1;
+}
+.bgimg3{
+    position: absolute;
+    width:100%;
+    height: 32%;
+    z-index:-1;
+}
+.doc1{
+    background-color:  #0086f6;
+    color: white;
+}
+.buttom{
+    height: 500rpx;
+    padding: 40rpx 30rpx;
+    display:flex;
+    flex-direction: column;
+    background-color:  #0086f6;
+    color: white;
+}
+.crtbtn{
+    margin-bottom: 20rpx;
+}

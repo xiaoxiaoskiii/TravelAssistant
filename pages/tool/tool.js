@@ -41,6 +41,12 @@ Page({
         name:'汇率转换',
         intro:'来自天行数据',
         ipath:'../images/tool/icon-exchange.png'
+    },{
+        id:8,
+        name:'多人组队',
+        intro:'结伴同行',
+        path:'/pages/team/team',
+        ipath:'../images/tool/icon-team.png'
     }
     ]
   },

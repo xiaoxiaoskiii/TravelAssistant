@@ -35,7 +35,8 @@
         "pages/translation/translation",
         "pages/subway/subway",
         "pages/map/map",
-        "pages/account/account"
+        "pages/account/account",
+        "pages/team/team"
     ],
     "window": {
         "backgroundTextStyle": "light",

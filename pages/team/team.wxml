@@ -1,0 +1,106 @@
+<!--pages/team/team.wxml-->
+
+<!-- part1 -->
+<!-- 寻找旅伴 -->
+<view wx:if="{{islogin==1}}"> 
+    <view class="header">
+        <view class="title">寻找旅伴</view>
+        <view class="title">Looking for Companion</view>
+    </view>
+</view>
+
+<!-- 创建队伍 -->
+<view wx:elif="{{islogin==2}}">
+    <view class="header">
+        <view class="title">创建队伍</view>
+        <view class="title">Create Your Team</view>
+    </view>
+</view>
+
+
+
+<!-- part2 -->
+<view class="body">
+    <!-- 寻找旅伴 -->
+    <view wx:if="{{islogin==1}}">
+        <scroll-view scroll-y="true" style="height: 1500rpx" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+            <view id="demo1" class="scroll-view-item demo-text1"   style="height:500rpx" >
+            <image class="bgimg1" src='../../image/大熊猫.jpeg'></image>
+                <view class="doc" bindtap=docget1">轻触屏幕查看队伍信息</view>
+                <view class="list-item" bindtap="testCgi">
+                    <text class="request-text">
+                    学校： {{docget1.school}}
+                    男生人数： {{docget1.numm}}
+                    女生人数： {{docget1.numf}}
+                    目的地： {{docget1.des}}
+                    出发日期： {{docget1.date}}
+                    游玩天数： {{docget1.days}}
+                    出发地点： {{docget1.ori}}
+                    联系方式（微信号）： {{docget1.wx}}
+                    描述：{{docget1.dis}}
+                    </text>
+                </view>
+            </view>
+            <view id="demo2" class="scroll-view-item demo-text2" style="height: 500rpx">
+                <image class="bgimg2" src='../../image/重庆洪崖洞.jpeg'></image>
+                <view class="doc" bindtap=docget2">轻触屏幕查看队伍信息</view>
+                <view class="list-item" bindtap="testCgi">
+                    <text class="request-text">
+                    学校： {{docget2.school}}
+                    男生人数： {{docget2.numm}}
+                    女生人数： {{docget2.numf}}
+                    目的地： {{docget2.des}}
+                    出发日期： {{docget2.date}}
+                    游玩天数： {{docget2.days}}
+                    出发地点： {{docget2.ori}}
+                    联系方式（微信号）： {{docget2.wx}}
+                    描述：{{docget2.dis}}
+                    </text>
+                </view>
+            </view>
+            <view id="demo1" class="scroll-view-item demo-text3" style="height: 500rpx" >
+                <image class="bgimg3" src='../../image/牛头山.jpeg'></image>
+                <view class="doc" bindtap=docget3">轻触屏幕查看队伍信息</view>
+                <view class="list-item" bindtap="testCgi">
+                    <text class="request-text">
+                    学校： {{docget3.school}}
+                    男生人数： {{docget3.numm}}
+                    女生人数： {{docget3.numf}}
+                    目的地： {{docget3.des}}
+                    出发日期： {{docget3.date}}
+                    游玩天数： {{docget3.days}}
+                    出发地点： {{docget3.ori}}
+                    联系方式（微信号）： {{docget3.wx}}
+                    描述：{{docget3.dis}}
+                    </text>
+                </view>
+            </view>
+            <view class="buttom">
+                <view class="title" bindtap="crtteam">创建我的队伍+</view>
+            </view>
+
+        </scroll-view>
+        <view class="tip">
+        <text class="tiptext">tips：交友需谨慎，谨防受骗！</text></view>
+    </view>
+
+    <!-- 创建队伍 -->
+    <view wx:if="{{islogin==2}}">
+        <view class="crtteam"> 
+            <input type="text" class="crt" bindinput="inputschool" placeholder="学校" value="{{school}}"/>
+            <view class='page'>
+            <input type="number" class="crtnumm" bindinput="inputmale" placeholder="男生人数" value="{{numm}}"/><input type="number" class="crtnumf" bindinput="inputfemale" placeholder="女生人数" value="{{numf}}"/>
+            </view>
+            <input type="text" class="crt" bindinput="inputdest" placeholder="目的地" value="{{dest}}"/>
+            <input type="text" class="crt" bindinput="inputdate" placeholder="出发日期" value="{{date}}"/>
+            <input type="number" class="crt" bindinput="inputdays" placeholder="游玩天数" value="{{days}}"/>
+            <textarea style="width: 100%;" placeholder="描述" value="{{desc}}" class="crtdesc" bindinput="inputdesc"></textarea>
+            <button class="crtbtn" type="primary" color="#000000" bindtap="addteam" style="background-color:  #0086f6;" >创建队伍</button>
+            <button class="crtbtn" type="primary" color="#000000" bindtap="findteam" style="background-color:  #0086f6;" >去寻找组队</button>
+            
+
+        </view>
+    </view>
+
+
+</view>
