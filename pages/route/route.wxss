@@ -1,0 +1,22 @@
+/* page{
+    background-color: #f4f4f4;
+} */
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25rpx;
+    padding: 5rpx 60rpx;
+    height: 150rpx;
+    background-color: #fff;
+    border: 1rpx solid #efefef;
+    border-radius: 8rpx;
+    box-shadow: 1rpx 1rpx 15rpx #ddd;
+}
+.routename {
+    color: #0086f6;
+    font-weight: bold;
+}
+.routetime{
+    color: #ccc;
+}

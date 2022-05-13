@@ -1,0 +1,7 @@
+<!--pages/tool/tool.wxml-->
+<navigator class="item" bindtap="nav1" wx:for="{{gridname}}" wx:key="id" url= "{{item.path}}?title={{item.name}}">
+	<image class="icon" mode="widthFix" src="{{item.ipath}}"></image>
+	<view class="txt">{{item.name}}</view>
+	<view class="fenleitxt">{{item.intro}}</view>
+	<image class="rrr" mode="widthFix" src="../images/tool/icon-next.png"></image>
+</navigator>

@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<swiper class="swiper" indicator-dots circular indicator-active-color="white" autoplay interval="3000">
+<swiper-item wx:for="{{swiperList}}" wx:key="id">
+<image src="{{item.image}}"></image>
+</swiper-item>
+</swiper>
+
+<view class="message">
+<view class="fundmental">
+  <view class="covid" bindlongpress="getCovidInfo" bindtouchend="stopShow" >-长按查看最新疫情风险地区-</view>
+  
+  <view style="letter-spacing: 6rpx;" wx:if="{{covidCode == 200}}" hidden="{{!haveInfo}}" style="font-size: xx-small;line-height:normal">
+        <view style="color: red;">高风险：{{riskHigh}}</view>
+        <view style="color: rgb(255, 115, 0);">中风险：{{riskMid}}</view>
+      </view>
+<view class="location">
+    <view class="from">
+        <image class="icon" mode="widthFix" src="../images/index/icon-location.png"></image>
+<input type="text" placeholder="请输入出发地"/>
+</view>
+<view class="to">
+    <image class="icon" mode="widthFix" src="../images/index/icon-destination.png"></image>
+<input type="text" placeholder="请输入目的地"/>
+</view>
+<view class="from-time">
+    <image class="icon" mode="widthFix" src="../images/index/icon-start.png"></image>
+<input type="text" placeholder="请输入开始时间"/>
+</view>
+<view class="to-time">
+    <image class="icon" mode="widthFix" src="../images/index/icon-end.png"></image>
+<input type="text" placeholder="请输入结束时间"/>
+</view>
+</view>
+<view class="spot">
+    <view class="spot-name">
+    <text>景点</text>
+<input type="text"/>
+</view>
+<view>
+    <textarea  class="spot-detail" maxlength="-1" placeholder="请输入景点信息"></textarea>
+</view>
+</view>
+<view class="btns">
+<view>
+    <button style="background-color: #0086f6;margin-right: 10rpx;" type="primary" class="new" bindtap="newSpot">新增</button>
+</view>
+<view>
+    <button style="background-color: #0086f6;margin-left: 10rpx;" type="primary" class="submit" bindtap="submit">提交</button>
+    
+</view>
+
+</view>
+<view style="text-align: center;" class="footer">-图片来自中国国家地理网-</view>
+</view>
+
+</view>

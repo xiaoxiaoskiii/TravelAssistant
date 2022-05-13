@@ -1,0 +1,93 @@
+/**index.wxss**/
+.swiper{
+    margin-bottom: 20rpx;
+    height: 350rpx;
+    box-shadow: darkgray;
+}
+.swiper image{
+    width: 100%;
+    height: 100%;
+}
+.message .fundmental .location input{
+    background-color:rgb(248, 247, 247);
+    width: 600rpx;
+    margin-left: 15rpx;
+    margin-bottom: 10rpx;
+    padding: 15rpx;
+    font-size: 28rpx;
+    border: 1rpx solid #efefef;
+    border-radius: 10rpx;
+}
+.fundmental{
+    margin: 20rpx;
+    padding: 20rpx;
+}
+
+.icon{
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.fundmental .from,
+.fundmental .to,
+.fundmental .from-time,
+.fundmental .to-time{
+    display: flex;
+}
+
+.spot{
+    margin: 5px 0;
+    padding: 5px;
+    border: 1rpx solid #efefef;
+    line-height: 45rpx;
+    font-size: 28rpx;
+}
+
+.spot .spot-name{
+    display: flex;
+    flex-direction: row;
+}
+.spot .spot-name text{
+    margin-left: 15rpx;
+}
+.spot .spot-name input{
+    margin-left: 25rpx;
+    width: 500rpx;
+    border-bottom: 1rpx solid #efefef;
+}
+.spot-detail{
+    margin: 15rpx;
+    background-color: rgb(248, 247, 247);
+    padding: 15rpx;
+    width: 90%;
+    height: 200rpx;
+    line-height: 30rpx;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    margin: 10rpx 15rpx;
+    width: 90%;
+    text-align: center;
+} 
+.btns view{
+    flex: 80%;
+    /* margin: 5rpx; */
+    font-size: 30rpx;
+}
+
+.footer{
+  font-size: 25rpx;
+  color: gray;
+  text-align: center;
+  margin-top: 60rpx;
+  margin-bottom: 18rpx;
+}
+.covid{
+  font-size: 25rpx;
+  color: gray;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5rpx;
+  padding-bottom: 10rpx;
+}

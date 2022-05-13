@@ -1,0 +1,8 @@
+/* pages/routepage/routepage.wxss */
+.footer{
+  font-size: 25rpx;
+  color: gray;
+  text-align: center;
+  margin-top: 60rpx;
+  margin-bottom: 18rpx;
+}

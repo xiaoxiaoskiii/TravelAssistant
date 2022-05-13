@@ -1,0 +1,48 @@
+
+.header{
+    height: 200rpx;
+    padding: 40rpx 30rpx;
+    display:flex;
+    flex-direction: column;
+    background-color:#0086f6;
+    color: white;
+}
+.title{
+    font-size: 40rpx;
+    font-weight: 700;
+    padding: 20rpx;
+}
+.info{
+    font-size: 28rpx;
+    padding: 20rpx;
+}
+
+.body{
+    padding: 40rpx;
+}
+.one{
+    height:100rpx;
+    margin-top: top 30rpx;
+    margin-bottom: 20rpx;
+    box-shadow: #77778a 0 0 5rpx;
+    border-radius:10rpx;
+}
+.two{
+    border:solid 1rpx  #0086f6;
+    margin-top:40rpx;
+    margin-bottom: 20rpx;
+    width:100%;
+    background:40rpx;
+}
+.remember{
+    margin-top: 20rpx;
+}
+
+.end{
+    display: flex;
+    justify-content:center;
+}
+.end text{
+    margin-left:20rpx;
+    color:#9f9f9f;
+}

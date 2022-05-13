@@ -1,0 +1,13 @@
+<!--pages/translation/translation.wxml-->
+<view style="text-align:right;margin-top: 15rpx;margin-right: 15rpx;"> <button style="color: #0086f6;" type="default" size="mini" open-type="openSetting"
+    bindopensetting="callback">
+    授权</button></view>
+<!-- <view style="margin-top:20px" data-text="{{content}}">{{content}}</view> -->
+<view style="margin-top:40px;text-align: center;"><text>{{text}}</text></view>
+
+<view style="margin-top:200px;text-align:center;">
+  <view style="width:100%;margin-top:40rpx;text-align:center;">
+    <button type="primary" bindlongpress="postData" bindtouchend="stopData" style="background-color: #0086f6;width:50%;">
+      按住 说话 </button>
+  </view>
+</view>

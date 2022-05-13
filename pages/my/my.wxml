@@ -1,0 +1,70 @@
+<!--pages/my/my.wxml-->
+<view class="my-userinfo-container">
+  
+<!-- 头像昵称区域 -->
+<view class="top-box">
+    <view style="margin-top:9rpx;"> 
+    <view style="height: 5rpx; color: white; position: relative; left: 258rpx; top: -36rpx; background-color: #0086f6;font-size: smaller;" >
+    组队模式</view></view>
+    <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" style="background-color: #0086f6; border-color: #0086f6; color: rgb(255, 255, 255); font-size: medium"> 微信登录 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view style="margin-top: 10px;">
+    <button  bindtap="toLogin" style="background-color: #0086f6; border-color: #0086f6; color: white; position: relative; left: 0rpx; top: -10rpx; font-size: medium"> 账号登录 </button>
+  </view>
+  
+</view>
+
+<!-- 面板的列表区域 -->
+<view class="panel-list">
+<!-- 第一个面板 -->
+<view class="panel">
+<!-- panel 的主体区域 -->
+<view class="panel-body">
+  <!-- panel 的 item 项 -->
+  <view class="panel-item">
+    <text>1</text>
+    <text>收藏</text>
+  </view>
+  <view class="panel-item">
+    <text>1</text>
+    <text>点赞</text>
+  </view>
+  <view class="panel-item">
+    <text>1</text>
+    <text>足迹</text>
+  </view>
+</view>
+</view>
+
+<!-- 第二个面板 -->
+<view class="panel">
+<view class="panel-list-item">
+<button style="width: 800rpx; color: #0086f6;" >查看账单</button>
+<uni-icons type="arrowright" size="15"></uni-icons>
+</view>
+<view class="panel-list-item">
+<button style="width: 800rpx;color: #0086f6;"  open-type="contact">联系客服</button>
+<uni-icons type="arrowright" size="15"></uni-icons>
+</view>
+<view class="panel-list-item" >
+<button style="width: 800rpx;color: #0086f6;"  bindtap="logout">退出登录</button>
+<uni-icons type="arrowright" size="15"></uni-icons>
+</view>
+</view>
+</view>
+</view>

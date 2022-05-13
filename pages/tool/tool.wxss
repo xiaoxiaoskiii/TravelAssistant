@@ -1,0 +1,58 @@
+/* pages/tool/tool.wxss */
+page{
+    background-color: #f4f4f4;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 16rpx;
+    background-color: white;
+    position: relative;
+    height: 80rpx;
+    margin-bottom: 20rpx;
+  }
+  .fenleitxt{
+    position: absolute;
+    left: 280rpx;
+    font-size: 25rpx;
+    color: #999;
+    /* margin-top: 10rpx; */
+    line-height: 80rpx;
+  }
+  /* .hongdian{
+    width: 20rpx;
+    height: 20rpx;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 96rpx;
+    top: 44rpx;
+  } */
+  .icon{
+    width: 42rpx;
+    max-height: 50rpx;
+    top: 40rpx;
+    position: absolute;
+  }
+  .rrr{
+    width: 26rpx;
+    max-height: 46rpx;
+    top: 44rpx;
+    position: absolute;
+    right: 40rpx;
+  }
+  .logo{
+    width: 50rpx;
+    top: 35rpx;
+    height: 50rpx;
+    border-radius: 10rpx;
+    position: absolute;
+    right: 90rpx;
+  }
+  .txt{
+    /* font-weight: 600; */
+    line-height: 80rpx;
+    font-size: 32rpx;
+    color:black;
+    margin-left: 70rpx;
+  }

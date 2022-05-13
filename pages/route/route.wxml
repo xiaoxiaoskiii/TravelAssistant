@@ -1,0 +1,7 @@
+<!--pages/route/route.wxml-->
+<navigator class="route-item" wx:for="{{routeList}}" wx:key="id" url="/pages/routepage/routepage?from={{item.from}}&to={{item.to}}">
+    <view class="info">
+    <text class="routename">{{item.from}}-{{item.to}}</text>
+    <text class="routetime">{{item.fromtime}}-{{item.totime}}</text>
+    </view>
+</navigator>
