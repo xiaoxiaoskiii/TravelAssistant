@@ -1,0 +1,76 @@
+{
+    "permission": {
+        "scope.userLocation": {
+          "desc": "你的位置信息将用于小程序定位"
+        }
+      },
+      "plugins": {
+        "chooseLocation": {
+          "version": "1.0.9",
+          "provider": "wx76a9a06e5b4e693e"
+        },
+        "routePlan": {
+          "version": "1.0.19",
+          "provider": "wx50b5593e81dd937a"
+        },
+        "subway": {
+          "version": "1.0.13",
+          "provider": "wx6aaf93c4435fa1c1"
+        },
+        "WechatSI": {
+          "version": "0.0.7",
+          "provider": "wx069ba97219f66d99"
+        }
+      },
+    "pages": [
+        "pages/my/my",
+        "pages/index/index",
+        "pages/route/route",
+        "pages/tool/tool",
+        "pages/toollist/toollist",
+        "pages/routepage/routepage",
+        "pages/login/login",
+        "pages/weather/weather",
+        "pages/plan/plan",
+        "pages/translation/translation",
+        "pages/subway/subway",
+        "pages/map/map",
+        "pages/account/account"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#0086f6",
+        "navigationBarTitleText": "旅行小助手",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "custom":true,
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "./pages/images/tabs/icon-spot.png",
+            "selectedIconPath": "./pages/images/tabs/icon-spot-active.png"
+        },{
+            "pagePath": "pages/route/route",
+            "text": "行程",
+            "iconPath": "./pages/images/tabs/icon-route.png",
+            "selectedIconPath": "./pages/images/tabs/icon-route-active.png"
+        },{
+            "pagePath": "pages/tool/tool",
+            "text": "工具",
+            "iconPath": "./pages/images/tabs/icon-tool.png",
+            "selectedIconPath": "./pages/images/tabs/icon-tool-active-b.png"
+        },{
+            "pagePath": "pages/my/my",
+            "text": "我的",
+            "iconPath": "./pages/images/tabs/icon-my.png",
+            "selectedIconPath": "./pages/images/tabs/icon-my-active.png"
+        }]
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-tabbar": "./miniprogram_npm/miniprogram_npm/@vant/weapp/tabbar/index",
+        "van-tabbar-item": "./miniprogram_npm/miniprogram_npm/@vant/weapp/tabbar-item/index",
+        "van-button": "./miniprogram_npm/miniprogram_npm/@vant/weapp/button/index"
+      }      
+}
